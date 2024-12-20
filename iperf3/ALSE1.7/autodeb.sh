@@ -48,7 +48,7 @@ Package: iperf3
 Version: 3.18-1
 Architecture: amd64
 Maintainer: AnilAntari
-Depends: debconf, adduser, libc6, libiperf0, debconf (>= 0.5) | debconf-2.0
+Depends: debconf, adduser, libc6, debconf (>= 0.5) | debconf-2.0
 Section: net
 Priority: optional
 Homepage: https://github.com/esnet/iperf
