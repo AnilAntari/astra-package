@@ -62,6 +62,7 @@ Description: Internet Protocol bandwidth measuring tool
  This package contains the command line utility.
 EOF"
 	chroot /home/"$SUDO_USER"/chroot-amd64 dpkg-deb --build /opt/$dir
+	apt install ./chroot-amd64/opt/iperf3-3.18-1_amd64.deb -y
 }
 
 sources_list
