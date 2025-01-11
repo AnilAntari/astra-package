@@ -29,9 +29,9 @@ EOF"
 }
 
 function install_winbox {
-  version=14
+  version=16
 
-  $chroot_dir wget -P /opt https://download.mikrotik.com/routeros/winbox/4.0beta14/WinBox_Linux.zip
+  $chroot_dir wget -P /opt https://download.mikrotik.com/routeros/winbox/4.0beta"$version"/WinBox_Linux.zip
   $chroot_dir mkdir /opt/winbox4.0beta"$version"
   $chroot_dir mkdir -p /opt/winbox4.0beta"$version"/debian/winbox/usr/{share/pixmaps,share/applications,share/winbox,bin}
   $chroot_dir unzip /opt/WinBox_Linux.zip -d /opt/winbox4.0beta"$version"
